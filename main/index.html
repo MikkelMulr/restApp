@@ -1,0 +1,523 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    
+    <!-- meta tag to make sure content is same width as device and not scalabl -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <title>Project 02 Framework</title>
+    
+    <!-- link to css files -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    
+    <!-- link to js files -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/TweenMax.min.js"></script>
+</head>
+
+<body>
+    <!-- <div class="frame-container">
+    <div class="frame"></div> -->
+    <!-- <img src="./img/frame.png" alt="frame" class="frame"> -->
+    <!-- MENU -->
+    <main id="menu">
+        <header>FAMILY OF EATERIES</header>
+        <div id="backToLanding" class="menuBtn"><img src="img/main-logo.png" alt="Home" /><span>Select a New Restaurant</span></div>
+        <div id="contact" class="menuBtn"><i class="fas fa-envelope"></i><span>Contact Family of Eateries</span></div>
+        <div id="about" class="menuBtn"><i class="fas fa-info"></i><span>About Family of Eateries</span></div>
+
+        <div class="menuBtn" id="contact-content" data-click-state= "1">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or feedback contact us at:</p>
+            <ul>
+                <li>email: feedback@foe.com</li>
+                <li>Phone: 1-(800)-222-3456</li>
+            </ul>
+            <p>We look forward to hearing from you!</p>
+        </div>
+
+        <div class="menuBtn" id="about-content" data-click-state= "1">
+            <h2>About Us</h2>
+            <p>The Family of Eateries chain of restaurants was established in 2002.</p>
+            <br />
+            <p>Restaurants: </p>
+            <ul>
+                <li>Ceviche</li>
+                <li>Five Vines</li>
+                <li>Hearth & Stone</li>
+            </ul>
+        </div>
+    </main>
+    <!-- SPLASH SCREEN -->
+    <main id="splash">
+        <header>FAMILY OF EATERIES</header>
+        <img src="img/main-logo.png" alt="Family of Eateries" />
+        <p>we're setting the table...</p>
+        <footer></footer>
+    </main>
+    <!-- LANDNG SCREEN -->
+    <main id="landing">
+        <header>
+            <img src="img/main-logo.png" alt="Family of Eateries" />
+            <p>SELECT A RESTAURANT</p>
+        </header>
+        <div id="logo1" class="landingLogos">
+            <img src="img/Ceviche-landing-logo.png" alt="Ceviche" />
+        </div>
+        <div id="logo2" class="landingLogos">
+            <img src="img/FiveVines-landing-logo.png" alt="Five Vines" />
+        </div>
+        <div id="logo3" class="landingLogos">
+            <img class="crispy" src="img/HS-landing-logo.png" alt="Hearth and stone" />
+        </div>
+        <footer></footer>
+    </main>
+    <!-- RESTAURANT 1 -->
+    <main id="rest1" class="rest">
+        <!-- header -->
+        <header>
+            <img class="hamburger" src="img/closeToOpen.gif" alt="Menu" data-click-state="1" />
+            <h1>Ceviche</h1>
+        </header>
+        <!-- home -->
+        <section class="home">
+            <div class="sectionContainer">
+                <img class="behind reveal" src="img/Ceviche-open.png" alt="Home" />
+                <img class="logo top-reveal" src="img/Ceviche-logo.png" alt="Ceviche" />
+            </div>
+                <div class="description reveal">
+                    <h2 class="top-reveal">Fine Dining</h2>
+                    <p>Ceviche's kitchen is lead by Executive chef Trevor Chefman. Ceviche opened its doors 13 years ago and each year we strive to present our
+                        diners with a fresh new experience and we invite you to come join us for dinner.</p>
+                </div>
+                <div class="restDetails reveal">
+
+                    <div class="location reveal">
+                        <img src="img/CevicheMap.png" alt="Ceviche location">
+                    </div>
+
+                    <div class="address reveal">
+                        <p>250 Queens Quay W</p>
+                        <p>Toronto, ON M5J 1B5</p>
+                    </div>
+
+                    <div class="hours reveal">
+                        <h2>HOURS</h2>
+                        <p>MON <span>-</span> THU <span>-</span> 10<span>:</span>00 to 23<span>:</span>00</p>
+                        <p>FRI <span>-</span> SUN <span>-</span> 13<span>:</span>00 to 24<span>:</span>00</p>
+                    </div>
+                </div>
+        </section>
+        <!-- specials -->
+        <section class="specials">
+            <div class="sectionContainer">
+                <img class="behind reveal" src="img/Ceviche-open.png" alt="Home" />
+                <img class="logo top-reveal" src="img/Ceviche-logo.png" alt="Ceviche" />
+            </div>
+                <div class="nightContainer reveal">              
+                    <div class="specials-text" class="reveal">
+                        <h2>Nightly Specials</h2>
+                        <p class="food-title">Slow Braised Beef Short Ribs</p>
+                        <p class="food-info">14oz. single bone short ribs... | 27.00</p>
+                        <p class="food-title">Tournedo Rossini</p>
+                        <p class="food-info">on dried fruit brioche... | 34.00</p>
+
+                        <h2>Weekly Specials</h2>
+                        <p class="food-title">Slow Braised Beef Short Ribs</p>
+                        <p class="food-info">14oz. single bone short ribs... | 27.00</p>
+                        <p class="food-title">Tournedo Rossini</p>
+                        <p class="food-info">on dried fruit brioche... | 34.00</p>
+                    </div>
+                </div>
+        </section>
+        <!-- reservations -->
+        <section class="reservations">
+                <img class="logo top-reveal" src="img/Ceviche-logo.png" alt="Ceviche" />            
+            <div class="sectionContainer">
+
+                <div class="confirmation">
+                    <h2>Reservation Confirmed!</h2>
+                    <p>Thank you for choosing Ceviche.</p>
+                    <p>A confirmation has been emailed to you.</p>
+                </div>
+
+                <h2 class="reveal">Create your reservation</h2>
+                <p class="reveal">* required</p>
+                <form>
+                    <p class="top-reveal">
+                        <label for="name">Name<span>*</span></label>
+                        <input type="text" name="name" placeholder="First and Last Name">
+                    </p>
+                    <p class="top-reveal">
+                        <label for="phone">Phone<span>*</span></label>
+                        <input type="text" name="phone" placeholder="(123) 456-7890">
+                    </p>
+                    <p class="top-reveal">
+                        <label for="email">Email<span>*</span></label>
+                        <input type="email" name="email" placeholder="you@email.com">
+                    </p>
+                    <p class="top-reveal">
+                        <label for="date">Date<span>*</span></label>
+                        <input type="date" name="date" placeholder="yyyy-mm-dd" />
+                    </p>
+                    <p class="top-reveal">
+                        <label for="time">Time<span>*</span></label>
+                        <select name="time">
+                            <option>Select a time...</option>
+                            <option value="6:00 pm">6:00 pm</option>
+                            <option value="6:30 pm">6:30 pm</option>
+                            <option value="7:00 pm">7:00 pm</option>
+                            <option value="7:30 pm">7:30 pm</option>
+                            <option value="8:00 pm">8:00 pm</option>
+                            <option value="8:30 pm">8:30 pm</option>
+                            <option value="9:00 pm">9:00 pm</option>
+                            <option value="9:30 pm">9:30 pm</option>
+                        </select>
+                    </p>
+                    <p class="top-reveal">
+                        <label for="guests">Number of Guests<span>*</span></label>
+                        <select name="time">
+                            <option>Select the number of guests...</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10+">10+</option>
+                        </select>
+                    </p>
+                    <p class="top-reveal">
+                        <label for="requests">Special Requests</label>
+                        <textarea name="requests" rows="4"></textarea>
+                    </p>
+                    <p class="top-reveal">
+                        <input type="submit" class="reserve" name="Submit" />
+                    </p>
+                </form>
+            </div>
+        </section>
+        <!-- footer -->
+        <footer>
+            <div class="homeIcon" data-section=".home">
+                <i class="fas fa-home"></i>
+                <p>Home</p>
+            </div>
+            <div class="specialsIcon" data-section=".specials">
+                <i class="fas fa-tags"></i>
+                <p>Specials</p>
+            </div>
+            <div class="reservationsIcon" data-section=".reservations">
+                <i class="fas fa-phone-volume"></i>
+                <p>Reservations</p>
+            </div>
+        </footer>
+    </main>
+    <!-- RESTAURANT 2 -->
+    <main id="rest2" class="rest">
+        <!-- header -->
+        <header>
+            <img class="hamburger" src="img/closeToOpen.gif" alt="Menu" data-click-state="1" />
+            <h1>Five Vines</h1>
+        </header>
+        <!-- home -->
+        <section class="home">
+            <div class="sectionContainer">
+                <img class="behind reveal" src="img/FiveVines-open.png" alt="Home" />
+                <img class="logo top-reveal" src="img/FiveVines_logo.png" alt="Five Vines" />
+                </div>
+                <div class="description reveal">
+                    <h2 class="top-reveal">Casual Fine Dining</h2>
+                    <p>Five Vines is a dining experience taking us back to the roots of nature. Our menu features
+                        many vegetable, root and plant based items. But fear not, we also offer several dishes with 
+                        delicious lean proteins. So come join us for dinner tonight! 
+                    </p>
+                </div>
+                <div class="restDetails reveal">
+
+                <div class="location reveal">
+                    <img src="img/5vMap.png" alt="Ceviche location">
+                </div>
+
+                <div class="address reveal">
+                    <p>129 Oxford St</p>
+                    <p>Toronto, ON M5J 1B5</p>
+                </div>
+
+                <div class="hours reveal">
+                    <h2>HOURS</h2>
+                    <p>MON <span>-</span> THU <span>-</span> 10<span>:</span>00 to 23<span>:</span>00</p>
+                    <p>FRI <span>-</span> SUN <span>-</span> 13<span>:</span>00 to 24<span>:</span>00</p>
+                </div>
+            </div>
+        </section>
+        <!-- specials -->
+        <section class="specials">
+            <div class="sectionContainer">
+                <img class="behind reveal" src="img/FiveVines-open.png" alt="Home" />
+                <img class="logo top-reveal" src="img/FiveVines_logo.png" alt="Five Vines" />
+            </div>
+                <div class="nightContainer reveal">              
+                    <div class="specials-text" class="reveal">
+                        <h2 id="top-specials">Specials</h2>
+                        <h2>Nightly</h2>
+                        <p class="food-title">Greek Wedge Salad</p>
+                        <p class="food-info">$14.00</p>
+                        <p class="food-title">Grilled Vegetable Salad</p>
+                        <p class="food-info">$12.00</p>
+                        
+                        <h2>Weekly - Salads</h2>
+                        <p class="food-title">Grilled Tuna with Yogurt Sauce</p>
+                        <p class="food-info">$27.00</p>
+                        <p class="food-title">Sundried Tomato Pasta</p>
+                        <p class="food-info">$34.00</p>
+                    </div>
+                </div>
+        </section>
+        <!-- reservations -->
+        <section class="reservations">
+                <img class="logo top-reveal" src="img/FiveVines_logo.png" alt="Ceviche" />            
+            <div class="sectionContainer">
+
+                <div class="confirmation">
+                        <h2>Reservation Confirmed!</h2>
+                        <p>Thank you for choosing Five Vines.</p>
+                        <p>A confirmation has been emailed to you.</p>
+                </div>
+
+                <h2 class="reveal">Create your reservation</h2>
+                <p class="reveal">* required</p>
+                <form>
+                    <p class="top-reveal">
+                        <label for="name">Name<span>*</span></label>
+                        <input type="text" name="name" placeholder="First and Last Name">
+                    </p>
+                    <p class="top-reveal">
+                        <label for="phone">Phone<span>*</span></label>
+                        <input type="text" name="phone" placeholder="(123) 456-7890">
+                    </p>
+                    <p class="top-reveal">
+                        <label for="email">Email<span>*</span></label>
+                        <input type="email" name="email" placeholder="you@email.com">
+                    </p>
+                    <p class="top-reveal">
+                        <label for="date">Date<span>*</span></label>
+                        <input type="date" name="date" placeholder="yyyy-mm-dd" />
+                    </p>
+                    <p class="top-reveal">
+                        <label for="time">Time<span>*</span></label>
+                        <select name="time">
+                            <option>Select a time...</option>
+                            <option value="6:00 pm">6:00 pm</option>
+                            <option value="6:30 pm">6:30 pm</option>
+                            <option value="7:00 pm">7:00 pm</option>
+                            <option value="7:30 pm">7:30 pm</option>
+                            <option value="8:00 pm">8:00 pm</option>
+                            <option value="8:30 pm">8:30 pm</option>
+                            <option value="9:00 pm">9:00 pm</option>
+                            <option value="9:30 pm">9:30 pm</option>
+                        </select>
+                    </p>
+                    <p class="top-reveal">
+                        <label for="guests">Number of Guests<span>*</span></label>
+                        <select name="time">
+                            <option>Select the number of guests...</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                        </select>
+                    </p>
+                    <p class="top-reveal">
+                        <label for="requests">Special Requests</label>
+                        <textarea name="requests" rows="4"></textarea>
+                    </p>
+                    <p class="top-reveal">
+                        <input type="submit" class="reserve" name="Submit" />
+                    </p>
+                </form>
+            </div>
+        </section>
+        <!-- footer -->
+        <footer>
+            <div class="homeIcon" data-section=".home">
+                <i class="fas fa-home"></i>
+                <p>Home</p>
+            </div>
+            <div class="specialsIcon" data-section=".specials">
+                <i class="fas fa-tags"></i>
+                <p>Specials</p>
+            </div>
+            <div class="reservationsIcon" data-section=".reservations">
+                <i class="fas fa-phone-volume"></i>
+                <p>Reservations</p>
+            </div>
+        </footer>
+    </main>
+    <!-- RESTAURANT 3 -->
+    <main id="rest3" class="rest">
+        <!-- header -->
+        <header>
+            <img class="hamburger" src="img/closeToOpen.gif" alt="Menu" data-click-state="1" />
+            <h1>Hearth & Stone</h1>
+        </header>
+        <!-- home -->
+        <section class="home">
+            <div class="sectionContainer">
+                <img class="behind reveal" src="img/HS-open.png" alt="Home" />
+                <img class="logo top-reveal" src="img/HS-logo.png" alt="Ceviche" />
+            </div>
+                <div class="description reveal">
+                    <h2 class="top-reveal">Casual Dining</h2>
+                    <p>Hearth & Stone is all about creating a comfortable atmosphere for any and all who come
+                        to dine with us. We try to offer a varried menu that has something for everyone. 
+                    </p>
+                </div>
+                <div class="restDetails reveal">
+
+                    <div class="location reveal">
+                        <img src="img/HSMap.png" alt="Ceviche location">
+                    </div>
+
+                    <div class="address reveal">
+                        <p>307 Augusta Ave</p>
+                        <p>Toronto, ON M5T 2M2</p>
+                    </div>
+
+                    <div class="hours reveal">
+                        <h2>HOURS</h2>
+                        <p>MON <span>-</span> THU <span>-</span> 10<span>:</span>00 to 23<span>:</span>00</p>
+                        <p>FRI <span>-</span> SUN <span>-</span> 13<span>:</span>00 to 24<span>:</span>00</p>
+                    </div>
+                </div>
+            </section>
+        <!-- specials -->
+        <section class="specials">
+            <div class="sectionContainer">
+                <img class="behind reveal" src="img/HS-open.png" alt="Home" />
+                <img class="logo top-reveal" src="img/HS-logo.png" alt="Hearth and Stone" />
+            </div>
+                <div class="nightContainer reveal">              
+                    <div class="specials-text" class="reveal">
+                        <h2>Weekly Specials</h2>
+                        <p class="food-title">Three cheese mac'n'cheese</p>
+                        <p class="food-info">Reg. $18.00. | $12.00</p>
+                        <p class="food-title">Wings & drinks</p>
+                        <p class="food-info">Reg. $22.00.| $15.00</p>
+                        <p class="food-title">Double the apps</p>
+                        <p class="food-info">Reg. -- | $23.00</p>
+                        <p class="food-title">Pasta Blast</p>
+                        <p class="food-info">Reg. -- | $24.00</p>
+                    </div>
+                </div>
+            </section>
+        <!-- reservations -->
+        <section class="reservations">
+                <img class="logo top-reveal" src="img/HS-logo.png" alt="Hearth and Stone" />            
+            <div class="sectionContainer">
+
+                <div class="confirmation">
+                        <h2>Reservation Confirmed!</h2>
+                        <p>Thank you for choosing Hearth & Stone.</p>
+                        <p>A confirmation has been emailed to you.</p>
+                </div>
+
+                <h2 class="reveal">Create your reservation</h2>
+                <p class="reveal">* required</p>
+                <form>
+                    <p class="top-reveal">
+                        <label for="name">Name<span>*</span></label>
+                        <input type="text" name="name" placeholder="First and Last Name">
+                    </p>
+                    <p class="top-reveal">
+                        <label for="phone">Phone<span>*</span></label>
+                        <input type="text" name="phone" placeholder="(123) 456-7890">
+                    </p>
+                    <p class="top-reveal">
+                        <label for="email">Email<span>*</span></label>
+                        <input type="email" name="email" placeholder="you@email.com">
+                    </p>
+                    <p class="top-reveal">
+                        <label for="date">Date<span>*</span></label>
+                        <input type="date" name="date" placeholder="yyyy-mm-dd" />
+                    </p>
+                    <p class="top-reveal">
+                        <label for="time">Time<span>*</span></label>
+                        <select name="time">
+                            <option>Select a time...</option>
+                            <option value="6:00 pm">6:00 pm</option>
+                            <option value="6:30 pm">6:30 pm</option>
+                            <option value="7:00 pm">7:00 pm</option>
+                            <option value="7:30 pm">7:30 pm</option>
+                            <option value="8:00 pm">8:00 pm</option>
+                            <option value="8:30 pm">8:30 pm</option>
+                            <option value="9:00 pm">9:00 pm</option>
+                            <option value="9:30 pm">9:30 pm</option>
+                        </select>
+                    </p>
+                    <p class="top-reveal">
+                        <label for="guests">Number of Guests<span>*</span></label>
+                        <select name="time">
+                            <option>Select the number of guests...</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                        </select>
+                    </p>
+                    <p class="top-reveal">
+                        <label for="requests">Special Requests</label>
+                        <textarea name="requests" rows="4"></textarea>
+                    </p>
+                    <p class="top-reveal">
+                        <input type="submit" class="reserve" name="Submit" />
+                    </p>
+                </form>
+            </div>
+        </section>
+        <!-- footer -->
+        <footer>
+            <div class="homeIcon" data-section=".home">
+                <i class="fas fa-home"></i>
+                <p>Home</p>
+            </div>
+            <div class="specialsIcon" data-section=".specials">
+                <i class="fas fa-tags"></i>
+                <p>Specials</p>
+            </div>
+            <div class="reservationsIcon" data-section=".reservations">
+                <i class="fas fa-phone-volume"></i>
+                <p>Reservations</p>
+            </div>
+        </footer>
+    </main>
+</div>
+    
+    <script>
+        // hide all main elements above the selected index in the ()
+        // comment out when running animtion scripts
+        // 0=menu, 1=splash, 2=landing, 3=rest 1, 4=rest 2, 5=rest 3
+        // $("main:gt(3)").hide();
+        
+        // hide all section elements (in the selected restaurant/main screen)
+        // above the selected index in the ()
+        // comment out when running animtion scripts
+        // 0=home, 1=specials, 2=reservations
+        // $("#rest1 section:gt(0)").hide();
+</script>
+
+<!-- link to main js file -->
+<script src="js/main.js"></script>
+</body>
+
+</html>

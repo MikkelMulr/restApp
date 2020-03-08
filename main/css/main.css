@@ -1,0 +1,1114 @@
+/* RESET CSS ////////////////////////////////////////// */
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/* FONTS /////////////////////////////////////////////// */
+
+/* app font */
+
+@font-face {
+	font-family: "Gabriola";
+	src: url(fonts/Gabriola.ttf);
+}
+
+@font-face {
+	font-family: "SixCaps";
+	src: url(fonts/SixCaps.ttf);
+}
+
+@font-face {
+	font-family: "PlayFair";
+	src: url(fonts/PlayfairDisplay-Regular.ttf);
+}
+
+@font-face {
+	font-family: "Roboto";
+	src: url(fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+	font-family: "Roboto-bold";
+	src: url(fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+	font-family: "Monty";
+	src: url(fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+	font-family: "Monty-bold";
+	src: url(fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
+	font-family: "Fira";
+	src: url(fonts/FiraMono-Regular.ttf);
+}
+
+@font-face {
+	font-family: "Fira-bold";
+	src: url(fonts/FiraMono-Bold.ttf);
+}
+
+/* GENERAL APP STYLES /////////////////////////////////// */
+/* .frame {
+	width: 400px;
+	height: 810px;
+	z-index: 10000;
+	background-image: url('../img/frame.png');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: absolute;
+	left: 0;
+	top: 0;
+} */
+
+/* .frame-container {
+	width: 415px;
+	height: 747px;
+	border: 20px solid black;
+	border-radius: 20px;
+	overflow: hidden;
+	background-color: #000;
+} */
+
+body {
+	font-size: 14px;
+	overflow: hidden;
+}
+
+main {
+	position: absolute;
+	width: 375px;
+	height: 667px;
+	box-shadow: -5px 0 10px rgba(0, 0, 0, 0.5);
+	display: none;
+	border: 20px solid blackl;
+}
+
+header {
+	width: 375px;
+	height: 60px;
+	position: absolute;
+	top: 0;
+	padding: 15px;
+}
+
+section {
+	position: absolute;
+	top: 60px;
+	width: 375px;
+	height: 547px;
+	background: #171515;
+	overflow: auto;
+	padding: 20px;
+}
+
+footer {
+	width: 375px;
+	height: 60px;
+	position: absolute;
+	bottom: 0;
+}
+
+/* SPLASH SCREEN ////////////////////////////////////////// */
+
+#splash {
+	background: #171515;
+}
+
+#splash header {
+	font-family: "SixCaps";
+	background: #221e1e;
+	font-size: 42px;
+	color: #fff;
+	padding: 20px;
+	height: 90px;
+	text-align: center;
+	letter-spacing: 3px;
+}
+
+#splash img {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 296px;
+	height: auto;
+}
+
+#splash footer {
+	height: 10px;
+	background: #221e1e;
+}
+
+#splash p {
+	text-align: center;
+	color: #aaa;
+	font-family: "PlayFair";
+	font-size: 14px;
+	position: absolute;
+	left: 30%;
+	top: 75%;
+}
+
+/* LANDING SCREEN ///////////////////////////////////////// */
+
+#landing {
+	font-family: "Gabriola";
+	background: #171515;
+	padding-top: 130px;
+}
+
+#landing header {
+	background: #221e1e;
+	color: #fff;
+	height: 103px;
+	padding: 20px;
+	line-height: 100%;
+	text-align: right;
+	font-family: "SixCaps";
+	letter-spacing: 3px;
+	font-size: 35px;
+}
+
+#landing header img {
+	width: 67px;
+	height: auto;
+}
+
+.landingLogos {
+	position: relative;
+	padding-top: 20px;
+	margin: 20px;
+}
+
+.landingLogos:nth-child(3) {
+	margin-left: 40px;
+}
+
+.landingLogos:nth-child(4),
+.landingLogos:nth-child(2) {
+	margin-left: 0;
+}
+
+.fineDining {
+	position: absolute;
+	width: 125px;
+	height: auto;
+	right: -8px;
+	top: 15px;
+}
+
+.casualDining {
+	position: absolute;
+	width: 150px;
+	height: auto;
+	left: -8px;
+	top: 15px;
+}
+
+.fastFoodDining {
+	position: absolute;
+	width: 172px;
+	height: auto;
+	right: -8px;
+	top: 15px;
+}
+
+#landing footer {
+	height: 15px;
+	background: #221e1e;
+}
+
+/* MENU ////////////////////////////////////////////// */
+
+#menu {
+	font-family: "SixCaps";
+	letter-spacing: 2px;
+	background: #221e1e;
+	padding-top: 80px;
+	overflow: hidden;
+	max-height: 667px;
+}
+
+#menu header {
+	padding: 15px;
+	background: #221e1e;
+	color: #fff;
+	font-size: 25px;
+	line-height: 100%;
+}
+
+.menuBtn {
+	padding: 20px;
+	background: linear-gradient(to bottom, rgba(120, 85, 74, 1) 0%, rgb(49, 38, 36) 100%);
+	color: #fff;
+	margin-bottom: 2px;
+	font-size: 28px;
+	line-height: 100%;
+}
+
+.menuBtn img {
+	width: 32px;
+	height: auto;
+	float: left;
+	margin-right: 7px;
+}
+
+.menuBtn i {
+	font-size: 25px;
+	float: left;
+	margin-right: 7px;
+	width: 32px;
+}
+
+.menuBtn span {
+	text-align: left;
+	display: block;
+	margin-top: 2px;
+}
+
+.contactIcon {
+	margin-top: 3px;
+}
+
+/* About & Contact section */
+
+#about-content {
+	height: auto;
+}
+
+#contact-content {
+	height: auto;
+}
+
+#about-content,
+#contact-content {
+	overflow: hidden;
+	background: #171515;
+	border: 1px solid #78554a;
+	border-radius: 3px;
+	padding: 20px;
+	width: 260px;
+	color: #fff;
+	font-family: 'Roboto';
+}
+
+#about-content h2,
+#contact-content h2 {
+	color: #fff;
+	text-align: left;
+	border-bottom: 1px solid #fff;
+	margin-bottom: 8px;
+	font-size: 18px;
+}
+
+#about-content p,
+#contact-content p {
+	color: #fff;
+	font-size: 14px;
+}
+
+#about-content ul,
+#contact-content ul {
+	list-style: none;
+	font-size: 12px;
+	padding: 8px 6px;
+}
+
+/* SHARED RESTAURANT /////////////////////////////////// */
+
+/* header/footer */
+
+header img {
+	width: 35px;
+	height: auto;
+	float: left;
+	margin-right: 85px;
+}
+
+header h1 {
+	color: #fff;
+}
+
+footer div {
+	float: left;
+	text-align: center;
+	overflow: auto;
+	padding: 7px;
+	color: #fff;
+	font-size: 12px;
+}
+
+footer p {
+	padding: 0;
+}
+
+footer i {
+	font-size: 25px;
+	padding-bottom: 3px;
+}
+
+/* general section */
+.sectionContainer {
+	text-align: center;
+	overflow: auto;
+	color: #000;
+}
+
+/* home section */
+.photoAddress {
+	padding: 0 15px;
+	text-align: left;
+}
+
+.homeImg {
+	width: 148px;
+	height: auto;
+	float: left;
+	margin-right: 15px;
+	border-radius: 50%;
+}
+
+.photoAddress h2 {
+	line-height: 80%;
+	margin-bottom: 5px;
+}
+
+.photoAddress p {
+	font-size: 14px;
+	line-height: 130%;
+}
+
+.rating {
+	width: 100px;
+	height: auto;
+	margin-top: 5px;
+}
+
+.photoCount {
+	border: solid 1px #000;
+	padding: 1px;
+	text-align: center;
+	width: 148px;
+	margin-top: -15px;
+}
+
+.hours {
+	margin-top: 20px;
+}
+
+.hours h2 {
+	width: 100%;
+	text-align: left;
+}
+
+.hours p {
+	margin-top: 5px;
+	text-align: left;
+}
+
+.restDetails {
+	margin: 20px;
+}
+
+.location {
+	padding-bottom: 15px;
+	margin-left: -22px;
+}
+
+.location img {
+	width: 332px;
+	height: auto;
+	float: left;
+}
+
+/* general specials/reservations */
+.sectionBanner {
+	width: 359px;
+	height: 67px;
+	background-size: 359px auto;
+	margin-left: -12px;
+	text-align: center;
+	font-size: 30px;
+	padding-top: 10px;
+}
+
+/* specials section */
+.specials .sectionContainer {
+	border-top: none;
+	text-align: left;
+}
+
+.nightContainer {
+	padding: 10px;
+	width: 332px;
+	height: 483px;
+}
+
+.nightContainer div {
+	float: left;
+	width: 340px;
+}
+
+.nightContainer p {
+	margin-top: 10px;
+	margin: 0 !important;
+}
+
+.nightContainer .specials-text {
+	width: 332px;
+	padding: 20px;
+}
+
+.nightContainer .specials-text h2 {
+	font-size: 24px;
+	border-bottom: 1px solid #fff;
+	width: 275px;
+}
+
+.sub {
+	font-size: 20px;
+	margin: 0 !important;
+}
+
+.nightContainer ul {
+	font-size: 12px;
+	padding-left: 15px;
+	margin-top: 5px;
+}
+
+.altImg {
+	float: right !important;
+	margin: 0 !important;
+	margin-left: 10px !important;
+}
+
+/* reservations section */
+.reservations .sectionContainer {
+	border-top: none;
+	text-align: left;
+	padding: 10px;
+	padding-top: 0;
+	z-index: 1000;
+}
+
+.reservations h2 {
+	margin-top: 10px;
+}
+
+label {
+	display: block;
+	font-size: 16px;
+	margin-bottom: 5px;
+	margin-top: 10px;
+}
+
+input,
+select,
+textarea {
+	padding: 5px;
+	border: solid 1px;
+	width: 100%;
+	font-size: 14px;
+	border-radius: 5px;
+	color: #666;
+	background: #fff;
+}
+
+.reserve {
+	border-color: #fff !important;
+	color: #fff;
+	font-size: 18px;
+	margin-top: 15px;
+}
+
+.confirmation {
+	height: 230px;
+	width: 332px;
+	border-radius: 5px;
+	background: #000;
+	border: 3px solid #221e1e;
+	padding: 20px;
+	position: absolute;
+	left: 22px;
+	top: 320px;
+	z-index: 2000;
+}
+
+.confirmation h2 {
+	text-align: center;
+	color: #fff;
+	padding: 10px;
+}
+
+.confirmation p {
+	padding-top: 12px;
+	font-size: 14px;
+	color: #fff;
+	text-align: center;
+}
+
+/* RESTAURANT 1 ////////////////////////////////////// */
+
+/* general */
+#rest1 {
+	font-family: "PlayFair", sans-serif;
+	color: #ddd;
+}
+
+#rest1 p {
+	color: #aaa;
+}
+
+/* header/footer */
+#rest1 header {
+	font-family: "Gabriola";
+	letter-spacing: 3px;
+	padding-top: 15px;
+	background: #221e1e;
+	color: #fff;
+	font-size: 20px;
+	line-height: 100%;
+	text-align: right;
+}
+
+#rest1 footer {
+	background: #221e1e;
+}
+
+/* footer subnav */
+#rest1 .homeIcon {
+	margin-left: 55px;
+}
+
+#rest1 .specialsIcon {
+	margin-left: 30px;
+	margin-right: 25px;
+}
+
+#rest1 .logo {
+	position: absolute;
+	top: 0;
+	left: 40%;
+	width: 50%;
+	height: auto;
+	margin: 15px 0;
+	z-index: 2000;
+}
+
+#rest1 .behind {
+	width: 100%;
+	height: auto;
+	z-index: 1000;
+}
+
+/* home */
+
+#rest1 h2 {
+	font-family: "Gabriola", sans-serif;
+	color: #ddd;
+	font-size: 30px;
+}
+
+#rest1 .description {
+	padding: 15px 0;
+}
+
+#rest1 .description h2 {
+	color: #fff;
+	padding-bottom: 5px;
+	margin-bottom: 5px;
+	border-bottom: 1px solid #375a9c;
+}
+
+#rest1 .hours h2 {
+	color: #ddd;
+	font-size: 30px;
+	border-bottom: 1px solid #375a9c;
+}
+
+#rest1 .hours span {
+	color: #375a9c;
+	font-family: "PlayFair", sans-serif;
+	font-size: 18px;
+}
+
+#rest1 .hours p {
+	font-size: 22px;
+	font-family: "PlayFair", sans-serif;
+	color: #ddd;
+}
+
+/* specials */
+#rest1 .nightContainer {
+	background: url('../img/Ceviche-specials-board-flipped.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 10px;
+}
+
+#rest1 .nightContainer .specials-text .food-title {
+	font-family: "PlayFair", sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	padding-top: 12px;
+	color: #ddd;
+}
+
+#rest1 .nightContainer .specials-text .food-info {
+	font-family: "PlayFair", sans-serif;
+	font-size: 16px;
+	padding-bottom: 5px;
+}
+
+#rest1 .nightContainer .specials-text h2 {
+	border-bottom: 1px solid #375a9c;
+	margin-top: 15px;
+	padding-bottom: 5px;
+	width: 240px;
+}
+
+/* reservations */
+
+#rest1 .reservations .sectionContainer {
+	margin-top: 100px;
+	color: #aaa;
+}
+
+#rest1 .reservations h2 {
+	font-family: "Gabriola", sans-serif;
+	border-bottom: 1px solid #375a9c;
+}
+
+#rest1 .reservations label {
+	font-family: "PlayFair", sans-serif;
+}
+
+#rest1 input,
+#rest1 select,
+#rest1 textarea {
+	border-color: #375a9c;
+	font-family: "PlayFair", sans-serif;
+}
+
+#rest1 input:focus,
+#rest1 textarea:focus {
+	outline: none;
+	color: #fff;
+	background: rgba(90, 152, 211, 0.05);
+}
+
+#rest1 select:focus {
+	outline: none;
+	color: #000;
+	background: rgba(90, 152, 211, 0.05);
+}
+
+#rest1 .reserve {
+	border-color: #fff !important;
+	color: #fff;
+	background: #375a9c;
+}
+
+#rest1 .reserve:hover {
+	border-color: #408ab4 !important;
+	color: #aaa;
+	background: #408ab4;
+}
+
+#rest1 .reservations .confirmation {
+	background: #212229;
+}
+
+/* RESTAURANT 2 ////////////////////////////////////// */
+
+/* general */
+#rest2 {
+	font-family: "Roboto", sans-serif;
+	color: #ddd;
+}
+
+/* header/footer */
+#rest2 header {
+	font-family: "Monty", sans-serif;
+	background: #221e1e;
+	color: #fff;
+	font-size: 12px;
+	line-height: 100%;
+	text-align: right;
+}
+
+#rest2 footer {
+	background: #221e1e;
+}
+
+/* footer subnav */
+#rest2 .homeIcon {
+	margin-left: 55px;
+}
+
+#rest2 .specialsIcon {
+	margin-left: 30px;
+	margin-right: 25px;
+}
+
+#rest2 .logo {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 40%;
+	height: auto;
+	margin: 15px 0;
+	z-index: 2000;
+}
+
+/* home */
+
+#rest2 h2 {
+	font-family: "Monty", sans-serif;
+	border-bottom: 1px solid #1e5820;
+}
+
+#rest2 .description {
+	padding: 15px 0;
+}
+
+#rest2 .description h2 {
+	color: #fff;
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+	border-bottom: 1px solid #1e5820;
+}
+
+#rest2 .hours h2 {
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+	color: #fff;
+	font-size: 24px;
+	border-bottom: 1px solid #1e5820;
+}
+
+#rest2 .hours span {
+	color: #459248;
+	font-family: "Monty", sans-serif;
+	font-size: 18px;
+}
+
+#rest2 .hours p {
+	font-size: 18px;
+	font-family: "Monty", sans-serif;
+	color: #ddd;
+}
+
+/* specials */
+#rest2 .nightContainer {
+	background: url('../img/FiveVines-specials-board-flipped.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 15px;
+}
+
+#rest2 .nightContainer .specials-text .food-title {
+	font-family: "Roboto-bold", sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	padding-top: 12px;
+	color: #ddd;
+}
+
+#rest2 .nightContainer .specials-text .food-info {
+	font-family: "Roboto", sans-serif;
+	font-size: 16px;
+	padding-bottom: 5px;
+}
+
+#rest2 .nightContainer .specials-text h2 {
+	border-bottom: 1px solid #9abe9b;
+	margin-top: 15px;
+	padding-bottom: 5px;
+	width: 240px;
+}
+
+#rest2 .nightContainer .specials-text #top-specials {
+	width: 150px;
+	font-size: 30px;
+	padding-bottom: 10px;
+}
+
+/* reservations */
+#rest2 .reservations .logo {
+	position: absolute;
+	top: 0;
+	left: 55%;
+	width: 30%;
+	height: auto;
+	margin: 15px 0;
+	z-index: 2000;
+}
+
+#rest2 .reservations .sectionContainer {
+	margin-top: 108px;
+	color: #aaa;
+}
+
+#rest2 .reservations h2 {
+	font-family: "Monty", sans-serif;
+	border-bottom: 1px solid #1e5820;
+}
+
+#rest2 .reservations label {
+	font-family: "PlayFair", sans-serif;
+}
+
+#rest2 input,
+#rest1 select,
+#rest1 textarea {
+	border-color: #1e5820;
+	font-family: "Monty", sans-serif;
+}
+
+#rest2 input:focus,
+#rest1 textarea:focus {
+	outline: none;
+	color: #fff;
+	background: rgba(90, 152, 211, 0.05);
+}
+
+#rest2 select:focus {
+	outline: none;
+	color: #000;
+	background: rgba(90, 152, 211, 0.05);
+}
+
+#rest2 .reserve {
+	border-color: #fff !important;
+	color: #fff;
+	background: #1e5820;
+}
+
+#rest2 .reserve:hover {
+	border-color: #58a75b !important;
+	color: #aaa;
+	background: #58a75b;
+}
+
+#rest2 .reservations .confirmation {
+	background: #1e2e20;
+}
+
+#rest2 .reservations .confirmation h2 {
+	font-family: "Monty-bold", sans-serif;
+	text-align: center;
+	color: #fff;
+	padding: 10px;
+}
+
+#rest2 .reservations .confirmation p {
+	font-family: "Monty", sans-serif;
+	padding-top: 12px;
+	font-size: 14px;
+	color: #fff;
+	text-align: center;
+}
+
+/* RESTAURANT 3 ////////////////////////////////////// */
+
+/* general */
+#rest3 {
+	font-family: "Fira", sans-serif;
+	color: #ddd;
+}
+
+/* header/footer */
+#rest3 header {
+	font-family: "Fira", sans-serif;
+	background: #221e1e;
+	color: #fff;
+	font-size: 12px;
+	line-height: 100%;
+	text-align: right;
+}
+
+#rest3 footer {
+	background: #221e1e;
+}
+
+/* footer subnav */
+#rest3 .homeIcon {
+	margin-left: 55px;
+}
+
+#rest3 .specialsIcon {
+	margin-left: 30px;
+	margin-right: 25px;
+}
+
+#rest3 .logo {
+	position: absolute;
+	top: 0;
+	left: 45%;
+	width: 50%;
+	height: auto;
+	margin: 15px 0;
+	z-index: 2000;
+}
+
+/* home */
+
+#rest3 h2 {
+	font-family: "Monty", sans-serif;
+	border-bottom: 1px solid #581e1e;
+}
+
+#rest3 .description {
+	padding: 15px 0;
+}
+
+#rest3 .description h2 {
+	color: #fff;
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+	border-bottom: 1px solid #581e1e;
+}
+
+#rest3 .hours h2 {
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+	color: #fff;
+	font-size: 24px;
+	border-bottom: 1px solid #581e1e;
+}
+
+#rest3 .hours p {
+	font-size: 18px;
+	font-family: "Fira", sans-serif;
+	color: #ddd;
+}
+
+/* specials */
+#rest3 .nightContainer {
+	background: url('../img/HS-specials-board-flipped.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 15px;
+}
+
+#rest3 .nightContainer .specials-text .food-title {
+	color: #a02d2d;
+	font-family: "Fira-bold", sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	padding-top: 12px;
+}
+
+#rest3 .nightContainer .specials-text .food-info {
+	font-family: "Fira", sans-serif;
+	font-size: 16px;
+	padding-bottom: 5px;
+	padding-right: 30px;
+	text-align: right;
+}
+
+#rest3 .nightContainer .specials-text h2 {
+	border-bottom: 1px solid #a02d2d;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding-left: 10px;
+	padding-bottom: 8px;
+	width: 240px;
+}
+
+/* reservations */
+#rest3 .reservations .logo {
+	position: absolute;
+	top: 0;
+	left: 45%;
+	width: 40%;
+	height: auto;
+	margin: 15px 0;
+	z-index: 2000;
+}
+
+#rest3 .reservations .sectionContainer {
+	margin-top: 108px;
+	color: #aaa;
+}
+
+#rest3 .reservations h2 {
+	font-family: "Fira", sans-serif;
+	border-bottom: 1px solid #581e1e;
+}
+
+#rest3 .reservations label {
+	font-family: "Fira", sans-serif;
+}
+
+#rest3 input,
+#rest1 select,
+#rest1 textarea {
+	border-color: #581e1e;
+	font-family: "Fira", sans-serif;
+}
+
+#rest3 input:focus,
+#rest1 textarea:focus {
+	outline: none;
+	color: #fff;
+	background: rgba(211, 90, 90, 0.05);
+}
+
+#rest3 select:focus {
+	outline: none;
+	color: #000;
+	background: rgba(211, 90, 90, 0.05);
+}
+
+#rest3 .reserve {
+	border-color: #fff !important;
+	color: #fff;
+	background: #581e1e;
+}
+
+#rest3 .reserve:hover {
+	border-color: #a75858 !important;
+	color: #aaa;
+	background: #a75858;
+}
+
+#rest3 .reservations .confirmation {
+	background: #312424;
+}
+
+#rest3 .reservations .confirmation h2 {
+	font-family: "Fira-bold", sans-serif;
+	text-align: center;
+	color: #fff;
+	padding: 10px;
+}
+
+#rest3 .reservations .confirmation p {
+	font-family: "Fira", sans-serif;
+	padding-top: 12px;
+	font-size: 12px;
+	color: #fff;
+	text-align: center;
+}
+
+@media (max-width: 400px) {
+	.frame-container {
+		width: 100%;
+		height: 100%;
+		border: none;
+		border-radius: 0;
+		overflow: hidden;
+		background-color: none;
+	}
+}
